@@ -15,25 +15,21 @@ public class Helper {
                 if (part.matches("\\d+(\\.\\d+)?\\s*(thousand|million)?\\s*upvotes.*")) {
                     String[] upvotesPart = part.split(" ");
                     if (upvotesPart.length > 1) {
-                        try {
-                            double parsedDouble = Double.parseDouble(upvotesPart[0]);
-                            int upvotes;
-                            if (upvotesPart[0].contains(".")) {
-                                upvotes = (int) (parsedDouble * 1000);
-                            } else {
-                                upvotes = (int) parsedDouble;
-                            }
-                            if (upvotes > maxUpvotes) {
-                                maxUpvotes = upvotes;
-                                fullTextOfTag = text;
-                            }
-                        } catch (NumberFormatException e) {
+                        double parsedDouble = Double.parseDouble(upvotesPart[0]);
+                        int upvotes;
+                        if (upvotesPart[0].contains(".")) {
+                            upvotes = (int) (parsedDouble * 1000);
+                        } else {
+                            upvotes = (int) parsedDouble;
+                        }
+                        if (upvotes > maxUpvotes) {
+                            maxUpvotes = upvotes;
+                            fullTextOfTag = text;
                         }
                     }
                 }
             }
         }
-
         return fullTextOfTag;
     }
 

@@ -3,7 +3,6 @@ package pom;
 import baseDir.BaseForm;
 import baseDir.WaitUtils;
 import baseDir.elements.Button;
-import baseDir.elements.Checkbox;
 import baseDir.elements.Label;
 import baseDir.elements.TextBox;
 import io.appium.java_client.AppiumBy;
