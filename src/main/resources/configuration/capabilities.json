@@ -1,0 +1,9 @@
+{
+  "platformName": "android",
+  "platformVersion": "13.0",
+  "automationName": "UIAutomator2",
+  "app": "src/main/resources/Reddit.apk",
+  "appPackage": "com.reddit.frontpage",
+  "appActivity": ".StartActivity",
+  "autoGrantPermissions": true
+}

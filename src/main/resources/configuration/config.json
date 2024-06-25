@@ -1,0 +1,5 @@
+{
+    "port": "http://127.0.0.1:4723",
+    "timeout" : 7,
+    "poll_frequency" : 0.7
+}
